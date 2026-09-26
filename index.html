@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Me Offline — Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f1e7; --ink:#1f2a33; --muted:#5b6670; --navy:#2f4a36; --rope:#b08a3e;
+    --card:#fffdf8; --line:#e2d8c6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:20px;line-height:1.6}
+  .mock{background:#fff3c4;color:#6b5200;text-align:center;font:600 15px/1.4 system-ui,sans-serif;padding:8px 16px;border-bottom:1px solid #e8d48a}
+  .note{display:inline-block;background:#fff3c4;color:#6b5200;font:600 13px/1.3 system-ui,sans-serif;padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle}
+  nav{display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto;padding:18px 20px;font-family:Fraunces,serif;font-weight:600;color:var(--navy)}
+  nav span{font-size:16px;font-family:system-ui,sans-serif;font-weight:400;color:var(--muted)}
+  main{max-width:720px;margin:0 auto;padding:0 20px 60px}
+  .hero{text-align:center;padding:48px 0 32px;border-bottom:2px solid var(--line)}
+  .anchor{font-size:44px;color:var(--rope)}
+  h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(34px,6vw,50px);line-height:1.15;margin:8px 0 16px;color:var(--navy)}
+  .hero p{font-size:22px;color:var(--muted);margin:0 auto;max-width:560px}
+  h2{font-family:Fraunces,serif;font-weight:600;font-size:30px;color:var(--navy);margin:48px 0 12px}
+  .letter{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px;margin-top:32px;font-style:italic}
+  .letter .sig{font-style:normal;font-family:Fraunces,serif;font-weight:600;margin-top:12px;color:var(--navy)}
+  .cards{display:grid;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--rope);border-radius:6px;padding:22px 24px}
+  .card h3{font-family:Fraunces,serif;margin:0 0 4px;font-size:25px;color:var(--navy)}
+  .card p{margin:0 0 14px;color:var(--muted)}
+  .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font:600 18px/1 system-ui,sans-serif;padding:14px 22px;border-radius:6px}
+  .btn.alt{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+  .events{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+  .events li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .date{flex:0 0 72px;text-align:center;font-family:Fraunces,serif;color:var(--navy);line-height:1.1}
+  .date b{display:block;font-size:30px}
+  .events small{display:block;color:var(--muted);font-size:17px}
+  .paper{background:var(--navy);color:#f6f1e7;border-radius:6px;padding:28px;margin-top:8px}
+  .paper h3{font-family:Fraunces,serif;font-size:27px;margin:0 0 6px;color:#fff}
+  .paper form{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .paper input{flex:1 1 220px;font-size:18px;padding:12px 14px;border-radius:6px;border:0}
+  .paper button{font:600 18px system-ui,sans-serif;padding:12px 20px;border-radius:6px;border:0;background:var(--rope);color:#fff}
+  .fine{background:#ece4d4;border-radius:6px;padding:20px 24px;font-size:18px;color:var(--ink)}
+  footer{text-align:center;color:var(--muted);font-size:16px;padding:30px 20px;border-top:2px solid var(--line)}
+  .struct{font:13px/1.3 system-ui,sans-serif;color:#9a6a2f;text-transform:uppercase;letter-spacing:.08em;margin-top:48px}
+  .struct + h2{margin-top:4px}
+</style>
+</head>
+<body>
+<div class="mock">MOCKUP · placeholder copy and dates · lifeinthemeadow.com/offline (public, no passphrase)</div>
+
+<nav>Life in the Meadow <span>lifeinthemeadow.com</span></nav>
+
+<main>
+  <section class="hero">
+    <div class="anchor">❦</div>
+    <h1>I've stepped away from social media.</h1>
+    <p>If an Instagram, Threads, Bluesky or LinkedIn post brought you here, welcome. Those accounts post by themselves now. The real stuff is below.</p>
+  </section>
+
+  <div class="struct">1 · A short note from BC</div>
+  <div class="letter">
+    I spent years posting into feeds and scrolling through other people's. I'd rather spend that time writing, mixing drinks and sitting across a table from people. So I've logged off. I didn't want to just disappear, though, so here's where to find me instead.
+    <div class="sig">— BC Gordon</div>
+  </div>
+
+  <div class="struct">2 · The two things I make</div>
+  <h2>Where to find me</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Letters from BC Gordon</h3>
+      <p>Essays on intentional living, friendship and finding enough, delivered to your inbox. This is where the conversation lives now.</p>
+      <a class="btn" href="#">Read and subscribe</a>
+    </div>
+    <div class="card">
+      <h3>Runaway Anchor</h3>
+      <p>The cocktail and mocktail project I run with four friends. Recipes, the seasonal menu, and a Patreon where members help shape what we pour next.</p>
+      <a class="btn" href="#">Visit Runaway Anchor</a> &nbsp; <a class="btn alt" href="#">Join on Patreon</a>
+    </div>
+  </div>
+
+  <div class="struct">3 · About those accounts</div>
+  <h2>A quick note</h2>
+  <div class="fine">
+    My accounts and Runaway Anchor's post automatically: new letters, new drinks and the occasional classic from the archive. <strong>Nobody reads the messages or comments there.</strong> If you want to reach me, reply to any letter or email <a href="#">hello@…</a>. I do write back.
+  </div>
+</main>
+
+<footer>❦ Life in the Meadow · BC Gordon · Twin Cities, MN</footer>
+</body>
+</html>
