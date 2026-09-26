@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find Me Offline · BC Gordon</title>
-  <meta name="description" content="I've stepped away from social media. Here's where to find me instead." />
+  <title>The Beacon · BC Gordon</title>
+  <meta name="description" content="I've left social media, but I left a beacon behind. Here's where to find me now." />
   <meta name="theme-color" content="#0a1628" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -170,6 +170,20 @@
       color: var(--text-mid);
       font-size: 1.15rem;
     }
+    .beacon {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--surface);
+      box-shadow: 0 0 12px 4px rgba(126, 184, 212, 0.55);
+      margin-bottom: 1.6rem;
+      animation: pulse 4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.45; box-shadow: 0 0 10px 3px rgba(126, 184, 212, 0.35); }
+      50%      { opacity: 1;    box-shadow: 0 0 26px 10px rgba(126, 184, 212, 0.6); }
+    }
+    @media (prefers-reduced-motion: reduce) { .beacon { animation: none; opacity: 1; } }
+    .build { text-align: center; }
+    .build p { color: var(--text-mid); max-width: 560px; margin: 0 auto 2rem; }
     .scroll-hint { margin-top: 3rem; color: var(--text-dim); font-size: 0.8rem; letter-spacing: 0.26em; text-transform: uppercase; text-decoration: none; }
 
     .note {
@@ -198,23 +212,24 @@
 <div class="page">
 
   <section class="hero rise">
-    <div class="label">a note from BC Gordon</div>
-    <div class="title">stepped <em>away</em></div>
+    <div class="beacon" aria-hidden="true"></div>
+    <div class="label">a beacon from BC Gordon</div>
+    <div class="title">you found the <em>light</em></div>
     <div class="divider"></div>
-    <p>I've stepped away from social media. If an Instagram, Threads, Bluesky or LinkedIn post brought you here, welcome. Those accounts post by themselves now. The real stuff is below.</p>
+    <p>I've left social media, but I left a beacon behind. The accounts you followed still send out a signal, and every one of them points here, so you can find me now that I'm gone.</p>
     <a class="scroll-hint" href="#note">↓ &nbsp;read on</a>
   </section>
 
   <section class="section" id="note">
     <p class="note">
-      I spent years posting into feeds and scrolling through other people's. I'd rather spend that time writing, mixing drinks and sitting across a table from people. So I've logged off. I didn't want to just disappear, though, so here's where to find me instead.
+      Deleting everything felt like slipping out the back door. A lot of people I care about still live in those feeds, and I didn't want to just vanish on them. So I left a light on. Follow it and you'll find me somewhere quieter: in my letters, around a table, and in the things I'm still making.
       <span class="sig">— BC</span>
     </p>
   </section>
 
   <section class="section">
-    <div class="label">where to find me</div>
-    <h2>Three things I <em>make</em></h2>
+    <div class="label">where the light leads</div>
+    <h2>Three things I'm still <em>making</em></h2>
     <div class="cards">
 
       <div class="card">
@@ -243,11 +258,18 @@
     </div>
   </section>
 
+  <section class="section build">
+    <div class="label">leave a light on</div>
+    <h2>Build your own <em>beacon</em></h2>
+    <p>Thinking about stepping away too? You don't have to disappear. I wrote down exactly how I set this up, using free tools and no coding, so you can leave a light on for the people you care about.</p>
+    <a class="btn primary" href="build-your-own-beacon.pdf" download>Download the guide</a>
+  </section>
+
   <section class="section">
-    <div class="label">about those accounts</div>
-    <h2>A quick <em>note</em></h2>
+    <div class="label">how the beacon works</div>
+    <h2>A note on the <em>signal</em></h2>
     <p class="fine">
-      My accounts and Runaway Anchor's post automatically: new letters, new drinks and the occasional classic from the archive. <strong>Nobody reads the messages or comments there.</strong> If you want to reach me, reply to any letter or email <a href="mailto:bc@runawayanchor.com">bc@runawayanchor.com</a>. I do write back.
+      My accounts and Runaway Anchor's keep posting on their own: new letters, new drinks and the occasional classic from the archive. Each post is a small flash of the beacon, pointing back here. <strong>Nobody reads the messages or comments there.</strong> If you want to reach me, reply to any letter or email <a href="mailto:bc@runawayanchor.com">bc@runawayanchor.com</a>. I do write back.
     </p>
   </section>
 
